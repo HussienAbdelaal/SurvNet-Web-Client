@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/head %>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Survival Network</a>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Incident Control Panel
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/report">Report an Incident</a>
+                    <a class="dropdown-item" href="/inquire">Inquire about an Incident</a>
+                    <a class="dropdown-item" href="/update">Update an Incident</a>
+                    <a class="dropdown-item" href="/remove">Delete an Incident</a>
+                    <a class="dropdown-item" href="/send">Send Supplies</a>
+                    <a class="dropdown-item" href="/receive">Verify Receival of Supplies</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-3" style="margin-top: 20px">Welcome to the Organizational ToolKit</h1>
+        <p class="lead">Dashboard & Incident Control Panel</p>
+    </div>
+
+    <div class="container">
+        <div class="row" style="text-align: center;" href>
+            <div class="col border">
+                <i class="fas fa-tachometer-alt fa-10x center"></i>
+                <h1 class="text-center">Dashboard</h1>
+                <p class="text-center">Access the Dashboard for insights about incident data</p>
+            </div>
+
+            <div class="col border">
+                <i class="fas fa-screwdriver fa-10x center"></i>
+                <h1 class="text-center">Incident Control Panel</h1>
+                <p class="text-center">Use the control panel to create, retrieve, update or delete incident documents</p>
+            </div>
+
+        </div>
+    </div>
+
+    <% include partials/foot %>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+{
+  "name": "web-client",
+  "version": "0.2.0",
+  "description": "Web-Client application designed to integrate with IBM Cloudant platform and supply-chain Blockchain network.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ansgohar/IBMCallForCodeTeamI.git"
+  },
+  "keywords": [
+    "Web-Client",
+    "IBM Cloudant platform",
+    "Blockchain",
+    "Integration",
+    "Back-End",
+    "Front-End"
+  ],
+  "author": "Omar Handouk & Ahmed Abd-ElAziz",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.18.3",
+    "date-and-time": "~0.6.2",
+    "ejs": "~2.6.1",
+    "express": "^4.16.4",
+    "jshint": "~2.9.6",
+    "method-override": "^3.0.0",
+    "npm": "~6.4.1",
+    "path": "~0.12.7",
+    "request": "^2.88.0",
+    "simple-node-logger": "~0.93.40"
+  },
+  "bugs": {
+    "url": "https://github.com/ansgohar/IBMCallForCodeTeamI/issues"
+  },
+  "homepage": "https://github.com/ansgohar/IBMCallForCodeTeamI#readme",
+  "devDependencies": {
+    "check-dependencies": "^1.1.0",
+    "nodemon": "^1.18.4"
+  }
+}

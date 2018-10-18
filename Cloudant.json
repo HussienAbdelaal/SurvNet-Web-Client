@@ -1,0 +1,12 @@
+{
+  "apikey": "2UM94t2C2iry_HYJtTyqYGPWtF0d4XpRJD1NtztwiplR",
+  "host": "3d878a23-6ab2-467d-b2b4-9132c92052d2-bluemix.cloudant.com",
+  "iam_apikey_description": "Auto generated apikey during resource-key operation for Instance - crn:v1:bluemix:public:cloudantnosqldb:eu-gb:a/b04ae2e0db9a482a826b6da164bcf1a1:7338cdd3-7399-458b-afb0-1d890f9468aa::",
+  "iam_apikey_name": "auto-generated-apikey-2478bd2d-76f0-4f6f-afb5-38dc47018788",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/b04ae2e0db9a482a826b6da164bcf1a1::serviceid:ServiceId-c92eac91-d600-4d3f-95e6-187b88477c4c",
+  "password": "0728007196494aac5361e9b13d772927987a7a41d0430c536583029fc0a21530",
+  "port": 443,
+  "url": "https://3d878a23-6ab2-467d-b2b4-9132c92052d2-bluemix:0728007196494aac5361e9b13d772927987a7a41d0430c536583029fc0a21530@3d878a23-6ab2-467d-b2b4-9132c92052d2-bluemix.cloudant.com",
+  "username": "3d878a23-6ab2-467d-b2b4-9132c92052d2-bluemix"
+}

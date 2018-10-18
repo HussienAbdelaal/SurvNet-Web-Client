@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/head %>
+
+    <style type="text/css">
+        #map {
+            width: 700px;
+            height: 500px;
+        }
+    </style>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARZj829jcIqy8ik7UKOwIT_CynjqIe4e0&amp;libraries=places&amp;callback=initMap"></script>
+    <script type="text/javascript" src="/JS/map.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Survival Network</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Incident Control Panel
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item highlight" href="/report">Report an Incident</a>
+                    <a class="dropdown-item" href="/inquire">Inquire about an Incident</a>
+                    <a class="dropdown-item" href="/update">Update an Incident</a>
+                    <a class="dropdown-item" href="/remove">Delete an Incident</a>
+                    <a class="dropdown-item" href="/send">Send Supplies</a>
+                    <a class="dropdown-item" href="/receive">Verify Receival of Supplies</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="row" style="margin-top: 10px">
+        <div class="container">
+            <fieldset>
+                <form action="/report" method="post" class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="Country">Country: </label>
+                        <input name="Country" type="text" class="form-control" placeholder="Enter Country" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="City">City: </label>
+                        <input name="City" type="text" class="form-control" placeholder="Enter a City" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="Disaster">Disaster: </label>
+
+                        <select class="form-control" name="Disaster" id="Disaster" required>
+                            <option>flood</option>
+                            <option>earthquake</option>
+                            <option>tsunami</option>
+                            <option>volcanicEruption </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group border">
+                        <label for="Map">Map: </label>
+                        <div id="map"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Longitude">Longitude: </label>
+                        <input id="lng" name="Longitude" type="text" class="form-control" readonly="yes" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Latitude">Latitude: </label>
+                        <input id="lat" name="Latitude" type="text" class="form-control" readonly="yes" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+
+    <% if(requestID !== null){ %>
+    <div class="container" style="text-align: left">
+        <div class="row border" style="margin-top: 10px">
+
+            <div class="col">
+                <h6>Status: <small style="color: green">
+                        <%= requestStatus %> </small> </h6>
+            </div>
+
+            <div class="col">
+                <h6>Report ID: <small style="color: slateblue">
+                        <%= requestID %> </small></h6>
+            </div>
+            <div class="col">
+                <h6>Revision: <small style="color: slateblue">
+                        <%= revision %> </small></h6>
+            </div>
+
+        </div>
+    </div>
+    <% } %>
+
+    <% if(error !== null){ %>
+    <div class="container" style="text-align: center">
+        <div class="row border" style="margin-top: 10px">
+
+            <h6>Something Went Wrong: <small style="color: red">
+                    <%= error %> </small></h6>
+        </div>
+    </div>
+    <% } %>
+
+    <% include partials/foot %>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+#result {
+    padding: 12px 12px 12px 12px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 10px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#paragraph {
+    font-size: 1.5em;
+}
+
+h1,
+p {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    resize: vertical;
+    animation-name: initial;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 10px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border-color: #4CAF50;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #4CAF50;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
