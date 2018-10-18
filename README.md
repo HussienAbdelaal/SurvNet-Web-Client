@@ -1,2 +1,2 @@
-# SurvNet
-prototyping for survival network solution
+# SurvNet-Web-Client
+prototyping survival network web client
